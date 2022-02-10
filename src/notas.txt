@@ -1,0 +1,28 @@
+**instalar angular
+ng new my-first-project
+***ver version 
+ng version
+
+CREAR PROYECTO
+ng new app-api-jose
+
+CREAR COMPONETE
+ng g c plantillas/header
+ng g c plantillas/footer
+
+ng g c vistas/login
+ng g c vistas/dashboard
+ng g c vistas/nuevo
+ng g c vistas/editar
+
+CREAR UN SERVICIO
+ng g s servicios/api/api
+
+crear carpeta interfacez o modelos
+APP/modelos
+
+LEVANTAR SERVIDOR
+ng serve
+
+
+npm install jquery boostrap --save
