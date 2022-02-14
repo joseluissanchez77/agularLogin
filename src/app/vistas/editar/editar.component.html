@@ -1,1 +1,44 @@
-<p>editar works!</p>
+<app-header></app-header>
+<div class="container">
+    <form [formGroup]="editarCourses" (ngSubmit)="updateForm(editarCourses.value)">
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">Nombre</label>
+            <input type="text" class="form-control" formControlName="c_name" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">Descripcion</label>
+            <input type="text" class="form-control" formControlName="c_description" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">periodo</label>
+            <input type="number" class="form-control" formControlName="c_period" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">numero de Estudiante</label>
+            <input type="text" class="form-control" formControlName="c_numberStudent" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">fecha de inicio</label>
+            <input type="text" class="form-control" formControlName="c_date_initial" placeholder="">
+        </div>
+
+        <div class="form-group">
+            <label for="formGroupExampleInput">Nota de aprobacion</label>
+            <input type="number" class="form-control" formControlName="c_note_approved" placeholder="">
+        </div>
+        <br>
+
+        <button type="submit" class="btn btn-success">guardar</button>
+
+        <button type="click" class="btn btn-danger" (click)="eliminarCurso()">eliminar</button>
+
+        <button type="click" class="btn btn-warning" (click)="salirCurso()">salir</button>
+    </form>
+</div>
+
+<app-footer></app-footer>

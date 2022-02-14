@@ -2,6 +2,14 @@ export interface ResponseI{
     message: string;
     accessToken: string;
     token_type: string;
+    statusText: string; 
+
+
+    timestamps:string;
+    path: string;
+    detail: string;
+    code: number;
+ 
     // user: {
     //     id: 1,
     //     name: jose,

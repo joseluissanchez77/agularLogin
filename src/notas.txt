@@ -17,6 +17,7 @@ ng g c vistas/editar
 
 CREAR UN SERVICIO
 ng g s servicios/api/api
+ng g s servicios/alertas/alertas
 
 crear carpeta interfacez o modelos
 APP/modelos
@@ -26,3 +27,9 @@ ng serve
 
 
 npm install jquery boostrap --save
+
+https://www.npmjs.com/package/ngx-toastr
+
+npm install ngx-toastr --save
+
+npm install @angular/animations --save
